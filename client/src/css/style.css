@@ -1,0 +1,376 @@
+body {
+    background: linear-gradient(to top, #5AB9B9, #6ec2f1);
+    color: #222;
+    margin: 0 auto;
+    text-align: center;
+    width: 1360px;
+    height: 100%;
+    min-height: 750px;
+}
+
+.button-view {
+
+    display: inline-block;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #038B1D;
+    background-color: #044792;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.button-view:hover {
+    background-color: #0DC30C;
+
+}
+
+.container h1 {
+    margin: 1em 0 0.5em 0;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+    font-size: 36px;
+    line-height: 40px;
+    padding: 15px 15px 15px 15%;
+    color: #e1e1e1;
+    width: 831px;
+    box-shadow: inset 0 0 0 1px rgba(53, 86, 129, 0.4),
+    inset 0 0 5px rgba(53, 86, 129, 0.5),
+    inset -3px 0 35px white;
+    border-radius: 0 10px 0 10px;
+  /*  background: #222222 url(../images/logo.png) no-repeat center left;*/
+    margin: 20px auto;
+}
+
+.container {
+    width: 1360px;
+    margin: 0 auto;
+}
+
+.entity-table {
+    margin: 20px auto;
+    font-size: 1.2em;
+    min-width: 1000px;
+    padding-bottom: 110px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.entity-table th {
+    background-color: #202832;
+    color: #e1e1e1;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+
+}
+
+.entity-table td {
+    padding: 20px;
+    background-color: #202832;
+    color: white;
+    font-size: 1.0em;
+    font-family: "Bitstream Vera Sans Mono";
+    margin-bottom: 20px;
+    border: 2px solid #5AB9B9;
+}
+
+.emp-form {
+    border-radius: 0 20px 0 20px;
+    border: 1px solid sandybrown;
+    width: 400px;
+    background-color: #202832;
+    color: white;
+    margin: 2% auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.valid-error {
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 7px;
+    opacity: 0.8;
+}
+
+.empl-inp {
+    list-style-type: none;
+}
+
+.input-unit {
+    clear: both;
+    text-align: right;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+label {
+    float: left;
+    margin-left: -30px;
+}
+
+.manage-button2 {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+    font-size: 1.0em;
+    font-weight: 700;
+    color: rgb(245, 245, 245);
+    text-shadow: 0 -1px rgba(0, 0, 0, .1);
+    text-decoration: none;
+    user-select: none;
+    padding: .3em 1em;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: #0c9c0d linear-gradient(#82d18d, #0c9c0d);
+    box-shadow: inset #72de26 0 -1px 1px, inset 0 1px 1px #98ff98, #3caa3c 0 0 0 1px, rgba(0, 0, 0, .3) 0 2px 5px;
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
+}
+
+.manage-button2 {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.manage-button2:active {
+    top: 1px;
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, .3), 0 0 5px #ffd, 0 0 8px #fff;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, .3), 0 1px 1px #fff, inset 0 1px 2px rgba(0, 0, 0, .8), inset 0 -1px 0 rgba(0, 0, 0, .05);
+}
+
+@-webkit-keyframes pulsate {
+    50% {
+        color: #fff;
+        text-shadow: 0 -1px rgba(0, 0, 0, .3), 0 0 5px #ffd, 0 0 8px #fff;
+    }
+}
+
+@keyframes pulsate {
+    50% {
+        color: #fff;
+        text-shadow: 0 -1px rgba(0, 0, 0, .3), 0 0 5px #ffd, 0 0 8px #fff;
+    }
+}
+
+.buttons-manage {
+    position: fixed;
+    top: 25%;
+    left: 5%;
+}
+
+.b-container {
+    width: 200px;
+    height: 150px;
+    background-color: #ccc;
+    margin: 0px auto;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.b-popup {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    display: none;
+}
+
+.b-popup .b-popup-content {
+    margin: 40px auto 0 auto;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    background-color: #c5c5c5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+
+}
+
+.alert-message {
+    width: 57%;
+    border-radius: 5px;
+    position: fixed;
+    top: 138px;
+    height: 66px;
+    background-color: rgba(1, 118, 34, 0.8);
+    margin-top: -47px;
+    left: 399px;
+}
+
+.alert-message h2 {
+    font-size: 1.4em;
+    margin-top: 22px;
+    color: wheat;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 95%;
+    padding: 30px 30px 6px 30px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 13px 3px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 13px 3px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 13px 3px rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+
+/* Поле сообщения */
+textarea {
+    background: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    height: 110px;
+    border: 1px solid rgba(255, 255, 255, .6);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+/* Поля ввода */
+input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid rgba(255, 255, 255, .4);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+:-moz-placeholder {
+    color: #fff;
+}
+
+::-moz-placeholder {
+    color: #fff;
+}
+
+:-ms-input-placeholder {
+    color: #fff;
+}
+
+input:focus, textarea:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px 1px rgba(255, 255, 255, .5);
+    -webkit-box-shadow: 0 0 5px 1px rgba(255, 255, 255, .5);
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, .5);
+    overflow: hidden;
+}
+
+/* Стили для кнопки отправить */
+.btn {
+    width: 138px;
+    height: 44px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    float: right;
+    border: 1px solid #253737;
+    background: #416b68;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6da5a3), to(#416b68));
+    background: -webkit-linear-gradient(top, #6da5a3, #416b68);
+    background: -moz-linear-gradient(top, #6da5a3, #416b68);
+    background: -ms-linear-gradient(top, #6da5a3, #416b68);
+    background: -o-linear-gradient(top, #6da5a3, #416b68);
+    background-image: -ms-linear-gradient(top, #6da5a3 0%, #416b68 100%);
+    padding: 10.5px 21px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    text-shadow: #333333 0 1px 0;
+    color: #e1e1e1;
+}
+
+.btn:hover {
+    border: 1px solid #253737;
+    text-shadow: #333333 0 1px 0;
+    background: #416b68;
+    background: -webkit-gradient(linear, left top, left bottom, from(#77b2b0), to(#416b68));
+    background: -webkit-linear-gradient(top, #77b2b0, #416b68);
+    background: -moz-linear-gradient(top, #77b2b0, #416b68);
+    background: -ms-linear-gradient(top, #77b2b0, #416b68);
+    background: -o-linear-gradient(top, #77b2b0, #416b68);
+    background-image: -ms-linear-gradient(top, #77b2b0 0%, #416b68 100%);
+    color: #fff;
+}
+
+.btn:active {
+    margin-top: 1px;
+    text-shadow: #333333 0 -1px 0;
+    border: 1px solid #333333;
+    background: #ffCC00;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffCC00), to(#ff6600));
+    background: -webkit-linear-gradient(top, #ffcc00, #ff6600);
+    background: -moz-linear-gradient(top, #ffcc00, #ff6600);
+    background: -ms-linear-gradient(top, #ffcc00, #ff6600);
+    background: -o-linear-gradient(top, #ffcc00, #ff6600);
+    background-image: -ms-linear-gradient(top, #ffcc00 0%, #ff6600 100%);
+    color: #fff;
+    -webkit-box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    outline: none;
+}
+
+.emp-form2 {
+    width: 21%;
+    left: 40%;
+    position: fixed;
+    top: 24%;
+}
+
+.emp-form2 input[type=text] {
+    background: rgba(255, 255, 255, 0.4);
+    padding-left: 25px;
+    width: 85%;
+}
